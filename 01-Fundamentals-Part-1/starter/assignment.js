@@ -11,8 +11,12 @@ console.log(country + continent + population);
 
 let isIsland = false;
 
-let language;
+//assignment let, const, var
+const language = "Irish";
 
 console.log(typeof isIsland);
 console.log(typeof language);
 console.log(typeof population);
+console.log(language);
+
+

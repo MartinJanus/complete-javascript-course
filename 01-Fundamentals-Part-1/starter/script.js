@@ -30,3 +30,5 @@ let year;
 
 console.log(typeof year);
 
+//const, let, var
+

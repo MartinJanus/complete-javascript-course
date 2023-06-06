@@ -1,4 +1,4 @@
-//Value and Variables 
+//Value and Variables
 
 /*
 let js = "Amazing";
@@ -20,34 +20,31 @@ console.log(firstName);
 
 // console.log(typeof jsisFun);
 
-
 // //changed data type (dynamic typing)
 // jsisFun = "YES!";
 
 // console.log(typeof jsisFun);
 
-// //undefined 
+// //undefined
 // let year;
 
 // console.log(typeof year);
 
 //const, let, var
 
-
-//Math operators 
+//Math operators
 
 // const now = 2037;
 // const ageJonas = now - 1991;
 // const ageSarah = now - 2018;
 
 // console.log(ageJonas, ageSarah);
-// console.log(ageJonas * 2, ageJonas / 10, 2 ** 3); //2 ** 3 means 2 to the power of 3 
+// console.log(ageJonas * 2, ageJonas / 10, 2 ** 3); //2 ** 3 means 2 to the power of 3
 
 // const firstName = "Jonas"
 // const lastName = "Schmedtmann"
 
 // console.log(firstName + " " + lastName);
-
 
 //Assignment operators
 // let x = 10 + 5; // 15
@@ -57,14 +54,14 @@ console.log(firstName);
 // x++; // x = x + 1; (101)
 // x--; // x = x - 1; (100)
 
-//Comparison Operators 
+//Comparison Operators
 // //(would be stored in variables)
-// console.log(ageJonas > ageSarah); //returns boolean (true)       >, <, >=, <= 
+// console.log(ageJonas > ageSarah); //returns boolean (true)       >, <, >=, <=
 // console.log(ageSarah >= 18);
 
 // const isFullAge = ageSarah >= 18;
 
-//Operator Precedence 
+//Operator Precedence
 // const now = 2037;
 // const ageJonas = now - 1991;
 // const ageSarah = now - 2018;
@@ -74,14 +71,12 @@ console.log(firstName);
 // const averageAge = (ageJonas + ageSarah) / 2
 // console.log(averageAge);
 
-
-//Strings and Template Literals 
+//Strings and Template Literals
 
 // const firstName = "Jonas";
 // const job = "Teacher";
 // const birthYear = 1991;
 // const year = 2037
-
 
 // const jonas = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
 
@@ -97,7 +92,6 @@ console.log(firstName);
 // multiple
 // lines`)
 
-
 //if-else Control Structure
 // const age = 15;
 // const isOldEnough = age >= 18;
@@ -109,7 +103,6 @@ console.log(firstName);
 //     const yearsLeft = 18 - age
 //     console.log(`Sarah is too young. Wait another ${yearsLeft} years`);
 // }
-
 
 // const birthYear = 1991;
 
@@ -124,23 +117,20 @@ console.log(firstName);
 
 // console.log(century);
 
+//Type Conversion and Coercion
 
-//Type Conversion and Coercion 
+//type conversion
+// const inputYear = "1991"; //string -> number
 
-//type conversion 
-// const inputYear = "1991"; //string -> number 
-
-//can convert string, number, boolean 
+//can convert string, number, boolean
 
 // console.log(Number(inputYear) + 18)
 // console.log(String(23));
 
-
-//type coercion     
+//type coercion
 // console.log("I am " + 23 + " years old");
 // console.log("23" - "10" - 3);
 // console.log("23" * "2");
-
 
 //Truthy and Falsy Values
 //5 Falsy values: 0, ‘’, undefined, null, NaN
@@ -151,7 +141,7 @@ console.log(firstName);
 // console.log(Boolean({}));
 // console.log(Boolean(''));
 
-//conversion to boolean is implicit not explicit 
+//conversion to boolean is implicit not explicit
 // const money = 0;
 
 // if (money) {
@@ -161,14 +151,14 @@ console.log(firstName);
 //     console.log("You should get a job")
 // }
 
-//Equality Operators 
+//Equality Operators
 
 // const age = 18;
 
 // if (age === 18) console.log("Adult");
 
 //triple equals doesnt perform type coersion
-//double equals is loose equality operator - does type coersion 
+//double equals is loose equality operator - does type coersion
 
 // const favouriteNumber = Number(prompt("What's your favourite number?"));
 // console.log(favouriteNumber);
@@ -187,16 +177,15 @@ console.log(firstName);
 //     console.log("Why not 23?");
 // }
 
+//Logical Operators
+// const hasDriversLicence = true; //A
+// const hasGoodVision = true; //B
 
-//Logical Operators 
-const hasDriversLicence = true; //A
-const hasGoodVision = true; //B
+// console.log(hasDriversLicence && hasGoodVision);
+// console.log(hasDriversLicence || hasGoodVision);
+// console.log(!hasDriversLicence);
 
-console.log(hasDriversLicence && hasGoodVision);
-console.log(hasDriversLicence || hasGoodVision);
-console.log(!hasDriversLicence);
-
-const shouldDrive = hasDriversLicence && hasGoodVision;
+// const shouldDrive = hasDriversLicence && hasGoodVision;
 
 // if (hasDriversLicence && hasGoodVision) {
 //     console.log("Sarah is able to drive");
@@ -205,15 +194,53 @@ const shouldDrive = hasDriversLicence && hasGoodVision;
 //     console.log("Someone else should drive");
 // }
 
-const isTired = false; //C
-console.log(hasDriversLicence || hasGoodVision || isTired);
+// const isTired = false; //C
+// console.log(hasDriversLicence || hasGoodVision || isTired);
 
-if (hasDriversLicence && hasGoodVision && !isTired) {
-    console.log("Sarah is able to drive");
+// if (hasDriversLicence && hasGoodVision && !isTired) {
+//     console.log("Sarah is able to drive");
+// }
+// else {
+//     console.log("Someone else should drive");
+// }
+
+//switch statement
+
+const day = "thursday";
+
+switch (day) {
+  case "monday": //day === "monday"
+    console.log(`Plan course structure`);
+    console.log(`Go to coding meetup`);
+    break;
+  case "tuesday":
+    console.log(`Prepare theory videos`);
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log(`Write code examples`);
+    break;
+  case "friday":
+    console.log(`Record Videos`);
+  case "saturday":
+  case "sunday":
+    console.log(`Enjoy the Weekend`);
+    break;
+  default:
+    console.log("Not a valid day!");
 }
-else {
-    console.log("Someone else should drive");
+
+if (day === "monday") {
+  console.log(`Plan course structure`);
+  console.log(`Go to coding meetup`);
+} else if (day === "tuesday") {
+  console.log(`Prepare theory videos`);
+} else if (day === "wednesday" || day === "thursday") {
+  console.log(`Write code examples`);
+} else if (day === "friday") {
+  console.log(`Record Videos`);
+} else if (day === "saturday" || day === "sunday") {
+  console.log(`Enjoy the Weekend`);
+} else {
+  console.log("Not a valid day!");
 }
-
-
-

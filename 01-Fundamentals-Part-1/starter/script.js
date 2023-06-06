@@ -204,43 +204,55 @@ console.log(firstName);
 //     console.log("Someone else should drive");
 // }
 
-//switch statement
+    //switch statement
 
-const day = "thursday";
+// const day = "thursday";
 
-switch (day) {
-  case "monday": //day === "monday"
-    console.log(`Plan course structure`);
-    console.log(`Go to coding meetup`);
-    break;
-  case "tuesday":
-    console.log(`Prepare theory videos`);
-    break;
-  case "wednesday":
-  case "thursday":
-    console.log(`Write code examples`);
-    break;
-  case "friday":
-    console.log(`Record Videos`);
-  case "saturday":
-  case "sunday":
-    console.log(`Enjoy the Weekend`);
-    break;
-  default:
-    console.log("Not a valid day!");
-}
+// switch (day) {
+//   case "monday": //day === "monday"
+//     console.log(`Plan course structure`);
+//     console.log(`Go to coding meetup`);
+//     break;
+//   case "tuesday":
+//     console.log(`Prepare theory videos`);
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log(`Write code examples`);
+//     break;
+//   case "friday":
+//     console.log(`Record Videos`);
+//   case "saturday":
+//   case "sunday":
+//     console.log(`Enjoy the Weekend`);
+//     break;
+//   default:
+//     console.log("Not a valid day!");
+// }
 
-if (day === "monday") {
-  console.log(`Plan course structure`);
-  console.log(`Go to coding meetup`);
-} else if (day === "tuesday") {
-  console.log(`Prepare theory videos`);
-} else if (day === "wednesday" || day === "thursday") {
-  console.log(`Write code examples`);
-} else if (day === "friday") {
-  console.log(`Record Videos`);
-} else if (day === "saturday" || day === "sunday") {
-  console.log(`Enjoy the Weekend`);
-} else {
-  console.log("Not a valid day!");
-}
+// if (day === "monday") {
+//   console.log(`Plan course structure`);
+//   console.log(`Go to coding meetup`);
+// } else if (day === "tuesday") {
+//   console.log(`Prepare theory videos`);
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log(`Write code examples`);
+// } else if (day === "friday") {
+//   console.log(`Record Videos`);
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log(`Enjoy the Weekend`);
+// } else {
+//   console.log("Not a valid day!");
+// }
+
+//Conditional (Ternary) Operator
+
+const age = 23; 
+age >= 18 ? console.log("I like to drink wine") : console.log("I like to drink water");
+
+
+const drink = age >= 18? "wine" : "water";
+console.log(drink);
+
+
+console.log(`I like to drink ${age >= 18? "wine" : "water"}`);
